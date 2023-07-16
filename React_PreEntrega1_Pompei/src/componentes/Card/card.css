@@ -1,0 +1,26 @@
+.card{
+  background-color: #afb6b972;
+  box-shadow: 5px 5px 10px 2px rgba(124, 115, 115, 0.5), -5px -5px 10px rgba(11, 10, 10, 0.3);
+  height: auto;
+  width: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 20px;
+}
+.card-imagen-contenedor{
+  width: 100%;
+  height: 100%;
+}
+.img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s;
+}
+.card-datos-contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

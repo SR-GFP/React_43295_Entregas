@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../src/media/imagenFondo2);  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  
+  background-color: black;
+}
+
+
