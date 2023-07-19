@@ -8,7 +8,8 @@
         "image": "/image/Glenfiddich1.jpeg",
         "description": "Un single malt suave y afrutado con notas de pera y vainilla.",
         "region": "Speyside",
-        "availability": true
+        "availability": true,
+        "stock": "10"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "image": "/image/Laphroaig2.jpeg",
         "description": "Un whisky de Islay, intenso y ahumado con un toque de dulzura.",
         "region": "Islay",
-        "availability": true
+        "availability": true,
+        "stock": "20"
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
         "image": "/image/Macallan3.jpeg",
         "description": "Un whisky de Speyside, rico y con cuerpo con influencia de roble de jerez.",
         "region": "Speyside",
-        "availability": true
+        "availability": true,
+        "stock": "10"
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "image": "/image/Ardbeg4.jpeg",
         "description": "Un whisky de Islay, turboso y complejo con sabores de chocolate negro y frutas secas.",
         "region": "Islay",
-        "availability": true        
+        "availability": true,
+        "stock": "15"        
     },
     {
         "id": 5,
@@ -52,7 +56,8 @@
         "image": "/image/HighlandPark5.jpeg",
         "description": "Un single malt equilibrado y ligeramente turbado con toques de miel de brezo.",
         "region": "Highland",
-        "availability": true
+        "availability": true,
+        "stock": "9"
     },
     {
         "id": 6,
@@ -63,7 +68,8 @@
         "image": "/image/Balvenie6.jpeg",
         "description": "Un whisky de Speyside, suave y elegante, envejecido tanto en barricas tradicionales de roble como de jerez.",
         "region": "Speyside",
-        "availability": true
+        "availability": true,
+        "stock": "11"
     },
     {
         "id": 7,
@@ -74,7 +80,8 @@
         "image": "/image/Glenmorangie7.jpeg",
         "description": "Un rico y cremoso whisky de las Highlands terminado en barricas de jerez.",
         "region": "Highland",
-        "availability": true
+        "availability": true,
+        "stock": "13"
     },
     {
         "id": 8,
@@ -85,7 +92,8 @@
         "image": "/image/Springbank8.jpeg",
         "description": "Un whisky Campbeltown, ligeramente turbado con influencia marítima.",
         "region": "Campbeltown",
-        "availability": true
+        "availability": true,
+        "stock": "10"
     },
     {
         "id": 9,
@@ -96,7 +104,8 @@
         "image": "/image/Talisker9.jpeg",
         "description": "Un whisky isleño robusto y ahumado con un carácter salobre.",
         "region": "Island",
-        "availability": true
+        "availability": true,
+        "stock": "20"
     },
     {
         "id": 10,
@@ -107,7 +116,8 @@
         "image": "/image/Bruichladdich10.jpeg",
         "description": "Un whisky de Islay increíblemente turboso y muy turbado.",
         "region": "Islay",
-        "availability": true
+        "availability": true,
+        "stock": "18"
     },
     {
         "id": 11,
@@ -118,7 +128,8 @@
         "image": "/image/Glendronach11.jpeg",
         "description": "Un rico whisky de las Highlands, jerezado con sabores de frutas oscuras y especias.",
         "region": "Highland",
-        "availability": true        
+        "availability": true,
+        "stock": "10"        
     },
     {
         "id": 12,
@@ -129,7 +140,8 @@
         "image": "/image/Bowmore12.jpeg",
         "description": "Un whisky de Islay, bien redondeado con un carácter achocolatado y ahumado.",
         "region": "Islay",
-        "availability": true
+        "availability": true,
+        "stock": "20"
     },
     {
         "id": 13,
@@ -140,7 +152,8 @@
         "image": "/image/Glenlivet13.jpeg",
         "description": "Un whisky de Speyside, suave y afrutado con notas de cítricos y vainilla.",
         "region": "Speyside",
-        "availability": true
+        "availability": true,
+        "stock": "10"
     },
     {
         "id": 14,
@@ -151,7 +164,8 @@
         "image": "/image/Macallan14.jpeg",
         "description": "Un whisky de Speyside, exquisito y de edición limitada con sabores complejos.",
         "region": "Speyside",
-        "availability": true
+        "availability": true,
+        "stock": "10"
     },
     {
         "id": 15,
@@ -162,6 +176,7 @@
         "image": "/image/JohnnieWalker15.jpeg",
         "description": "Un whisky escocés lujoso y mezclado con maltas raras y envejecidas.",
         "region": "Blend",
-        "availability": true        
+        "availability": true,
+        "stock": "20"        
     }
 ]

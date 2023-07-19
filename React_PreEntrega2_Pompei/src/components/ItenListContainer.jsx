@@ -10,30 +10,27 @@ import productsJSON from "../Json/products.json"
 const ItenListContainer = () => {
   const [products, setProducts]= useState([]);
   const {id} = useParams();
+
   useEffect(() => {
     const getProducts = async ()=>{
       try {
-        const response = await productsJSON;
-        console.log(response);
+        const response = await new Promise ((resolve)=>{
+          setTimeout(() => {
+            resolve (id ? productsJSON.filter(products=> products.region === id):productsJSON)
+          }, 2000);
+        });        
         setProducts(response)        
       } catch (error) {
         return console.log(error);
       }
     }
     getProducts();
-  }, [])
+  }, [id])
   
   return (    
     <Container>
-      <Row>
-      {products.map(p=><ItemList
-        key = {p.id}        
-        name = {p.name}
-        image = {p.image}
-        age = {p.age}
-        price = {p.price}
-        brand={p.brand}
-      />)}                
+      <Row>     
+        <ItemList products={products}/>               
       </Row>
     </Container>
   )
