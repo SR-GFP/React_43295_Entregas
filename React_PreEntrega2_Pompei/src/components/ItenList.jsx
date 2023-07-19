@@ -1,16 +1,16 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from "react-bootstrap/Col";
-import "../stylesSheets/card.css"
+import "../stylesSheets/itemlist.css"
 
-const ItenCard = ( { image, brand, name, price,age } ) => {
+const ItemList = ( { image, brand, name, price,age } ) => {
   return (
     <Col md="4" className='mt-3'>    
-    <Card className='' bg='dark' style={{ width: '20rem' }}>
+    <Card border="info"  style={{ width: '16rem' }}>
       <Card.Img variant="top" src={image} className='card-image' />
-      <Card.Body className='card-body-css'>
+      <Card.Body >
         <Card.Title>{brand}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted"> {name} </Card.Subtitle>
+        <Card.Subtitle className="mb-2"> {name} </Card.Subtitle>
         <Card.Text>
           <p>Años: {age} </p>
           <p> Precio: {price} </p>          
@@ -22,4 +22,4 @@ const ItenCard = ( { image, brand, name, price,age } ) => {
   );
 }
 
-export default ItenCard
+export default ItemList

@@ -1,19 +1,24 @@
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-import ItemCard from "./ItenCard";
+import ItemList from "./ItenList";
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import productsJSON from "../Json/products.json"
 
 
 
 const ItenListContainer = () => {
   const [products, setProducts]= useState([]);
-
+  const {id} = useParams();
   useEffect(() => {
     const getProducts = async ()=>{
-      const response = await productsJSON;
-      console.log(response);
-      setProducts(response)
+      try {
+        const response = await productsJSON;
+        console.log(response);
+        setProducts(response)        
+      } catch (error) {
+        return console.log(error);
+      }
     }
     getProducts();
   }, [])
@@ -21,7 +26,7 @@ const ItenListContainer = () => {
   return (    
     <Container>
       <Row>
-      {products.map(p=><ItemCard
+      {products.map(p=><ItemList
         key = {p.id}        
         name = {p.name}
         image = {p.image}

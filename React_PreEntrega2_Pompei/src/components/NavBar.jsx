@@ -1,34 +1,31 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import CartWidget from "./CartWidget"
-import "../stylesSheets/navbar.css";
-import { LiaGlassWhiskeySolid } from "react-icons/lia";
-import { GiSpiralBottle } from "react-icons/gi";
-
+import CartWidget from "./CartWidget";
+import { Link, NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <>
-      <Navbar className='navbar-container' bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">
-            <Container className="icono-container">
-              <GiSpiralBottle/>
-              <LiaGlassWhiskeySolid/>
-            </Container>
-          </Navbar.Brand>
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark">
+      <Container>
+        <Link className='navbar-brand' to={"/"}>El Club del <strong>Whisky</strong></Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <NavLink to={"/category/Speyside"} className="nav-link"> Speyside </NavLink>
+            <NavLink to={"/category/Islay"} className="nav-link"> Islay </NavLink>
+            <NavLink to={"/category/Highland"} className="nav-link"> Highland </NavLink>
+            <NavLink to={"/category/Campbeltown"} className="nav-link"> Campbeltown </NavLink>
+            <NavLink to={"/category/Island"} className="nav-link"> Island </NavLink>
+            <NavLink to={"/category/Blend"} className="nav-link"> Blend </NavLink>
           </Nav>
-            <Container className="d-flex justify-content-end">
-                <CartWidget/>
-            </Container>
-        </Container>        
-      </Navbar>      
-    </>
-  )}
+        </Navbar.Collapse>
+        <div>
+          <CartWidget/>
+        </div>
+      </Container>      
+    </Navbar>
+  );
+}
 
-  export default NavBar
+export default NavBar;
