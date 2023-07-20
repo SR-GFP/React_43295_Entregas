@@ -2,13 +2,14 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from "./CartWidget";
+import "../stylesSheets/navbar.css"
 import { Link, NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
     <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
-        <Link className='navbar-brand' to={"/"}>El Club del <strong>Whisky</strong></Link>
+        <Link className='navbar-brand' id="navbar-brand"to={"/"}> <h1>El Club del <span>Whisky</span> </h1></Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

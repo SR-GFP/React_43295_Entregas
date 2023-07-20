@@ -1,24 +1,18 @@
 import Item from "./Item";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
-import "../stylesSheets/itemlist.css"
+import "../stylesSheets/itemlist.css";
 
-
-const ItemList = ( { products } ) => {
+const ItemList = ({ products }) => {
   return (
     <Row>
-      {
-       products.map(products=>
-        <Col md="4" className='mt-3'
-          key={products.id}>
+      {products.map((products) => (
+        <Col md="4" className="mt-3" key={products.id}>
           <Item products={products} />
-          </Col>
-        ) 
-      }
+        </Col>
+      ))}
     </Row>
+  );
+};
 
-    
-  );  
-}
-
-export default ItemList
+export default ItemList;

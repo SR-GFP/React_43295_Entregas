@@ -1,21 +1,32 @@
 import React from 'react'
 import { useState } from "react";
-import { Container, Row, Col, Button, Alert, ButtonGroup  } from 'react-bootstrap';
+import { Container, Row, Col, Button,  ButtonGroup  } from 'react-bootstrap';
+import "../stylesSheets/itemcount.css"
 
 const ItemCount = ( {productsStock} ) => {
   const [counter, setCounter] = useState(1);
-  const [stock, setStoc] = useState(productsStock);
+  const [stock, setStock] = useState(productsStock);
+  
+  
+  
 
   const increaseStock = () => {
-    setCounter(counter < stock ? counter++ : counter)
+    if(counter < productsStock){  
+      setCounter (counter + 1)    
+      setStock (stock - counter) 
+    }        
   }
+
   const decreaseStock = () => {
-    setCounter(counter > 1 ? counter - 1 : counter);
-  };
+    if(counter > 1){
+      setCounter (counter - 1) 
+      setStock (stock + counter)
+    }
+  }  
 
   return (
-    <Container id="itemcount">
-      <Row className="mb-3">
+    <Container className='container-itencount'>
+      <Row className="mb-3 ">
         <Col md={2}>
           <ButtonGroup aria-label="Basic outlined example">
             <Button variant="outline-primary" onClick={decreaseStock}>-</Button>
@@ -33,6 +44,6 @@ const ItemCount = ( {productsStock} ) => {
   )
 }
 
-export default ItemCount
+export default ItemCount;
 
 

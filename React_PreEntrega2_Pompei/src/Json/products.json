@@ -4,179 +4,179 @@
         "brand": "Glenfiddich",
         "name": "12 Year Old",
         "age": 12,
-        "price": "$50",
+        "price": "usd 50",
         "image": "/image/Glenfiddich1.jpeg",
         "description": "Un single malt suave y afrutado con notas de pera y vainilla.",
         "region": "Speyside",
         "availability": true,
-        "stock": "10"
+        "stock": 10
     },
     {
         "id": 2,
         "brand": "Laphroaig",
         "name": "Quarter Cask",
         "age": 10,
-        "price": "$65",
+        "price": "usd 65",
         "image": "/image/Laphroaig2.jpeg",
         "description": "Un whisky de Islay, intenso y ahumado con un toque de dulzura.",
         "region": "Islay",
         "availability": true,
-        "stock": "20"
+        "stock": 20
     },
     {
         "id": 3,
         "brand": "Macallan",
         "name": "18 Year Old",
         "age": 18,
-        "price": "$150",
+        "price": "usd 150",
         "image": "/image/Macallan3.jpeg",
         "description": "Un whisky de Speyside, rico y con cuerpo con influencia de roble de jerez.",
         "region": "Speyside",
         "availability": true,
-        "stock": "10"
+        "stock": 10
     },
     {
         "id": 4,
         "brand": "Ardbeg",
         "name": "Uigeadail",
         "age": "Sin declaración de edad",
-        "price": "$80",
+        "price": "usd 80",
         "image": "/image/Ardbeg4.jpeg",
         "description": "Un whisky de Islay, turboso y complejo con sabores de chocolate negro y frutas secas.",
         "region": "Islay",
         "availability": true,
-        "stock": "15"        
+        "stock": 15        
     },
     {
         "id": 5,
         "brand": "Highland Park",
         "name": "12 Year Old Viking Honour",
         "age": 12,
-        "price": "$55",
+        "price": "usd 55",
         "image": "/image/HighlandPark5.jpeg",
         "description": "Un single malt equilibrado y ligeramente turbado con toques de miel de brezo.",
         "region": "Highland",
         "availability": true,
-        "stock": "9"
+        "stock": 9
     },
     {
         "id": 6,
         "brand": "Balvenie",
         "name": "DoubleWood 17 Year Old",
         "age": 17,
-        "price": "$130",
+        "price": "usd 130",
         "image": "/image/Balvenie6.jpeg",
         "description": "Un whisky de Speyside, suave y elegante, envejecido tanto en barricas tradicionales de roble como de jerez.",
         "region": "Speyside",
         "availability": true,
-        "stock": "11"
+        "stock": 11
     },
     {
         "id": 7,
         "brand": "Glenmorangie",
         "name": "Lasanta",
         "age": 12,
-        "price": "$60",
+        "price": "usd 60",
         "image": "/image/Glenmorangie7.jpeg",
         "description": "Un rico y cremoso whisky de las Highlands terminado en barricas de jerez.",
         "region": "Highland",
         "availability": true,
-        "stock": "13"
+        "stock": 13
     },
     {
         "id": 8,
         "brand": "Springbank",
         "name": "10 Year Old",
         "age": 10,
-        "price": "$70",
+        "price": "usd 70",
         "image": "/image/Springbank8.jpeg",
         "description": "Un whisky Campbeltown, ligeramente turbado con influencia marítima.",
         "region": "Campbeltown",
         "availability": true,
-        "stock": "10"
+        "stock": 10
     },
     {
         "id": 9,
         "brand": "Talisker",
         "name": "Storm",
         "age": "Sin declaración de edad",
-        "price": "$75",
+        "price": "usd 75",
         "image": "/image/Talisker9.jpeg",
         "description": "Un whisky isleño robusto y ahumado con un carácter salobre.",
         "region": "Island",
         "availability": true,
-        "stock": "20"
+        "stock": 20
     },
     {
         "id": 10,
         "brand": "Bruichladdich",
         "name": "Octomore 10.3",
         "age": 6,
-        "price": "$200",
+        "price": "usd 200",
         "image": "/image/Bruichladdich10.jpeg",
         "description": "Un whisky de Islay increíblemente turboso y muy turbado.",
         "region": "Islay",
         "availability": true,
-        "stock": "18"
+        "stock": 18
     },
     {
         "id": 11,
         "brand": "Glendronach",
         "name": "18 Year Old Allardice",
         "age": 18,
-        "price": "$120",
+        "price": "usd 120",
         "image": "/image/Glendronach11.jpeg",
         "description": "Un rico whisky de las Highlands, jerezado con sabores de frutas oscuras y especias.",
         "region": "Highland",
         "availability": true,
-        "stock": "10"        
+        "stock": 10        
     },
     {
         "id": 12,
         "brand": "Bowmore",
         "name": "15 Year Old Darkest",
         "age": 15,
-        "price": "$85",
+        "price": "usd 85",
         "image": "/image/Bowmore12.jpeg",
         "description": "Un whisky de Islay, bien redondeado con un carácter achocolatado y ahumado.",
         "region": "Islay",
         "availability": true,
-        "stock": "20"
+        "stock": 20
     },
     {
         "id": 13,
         "brand": "Glenlivet",
         "name": "Founder's Reserve",
         "age": "Sin declaración de edad",
-        "price": "$45",
+        "price": "usd 45",
         "image": "/image/Glenlivet13.jpeg",
         "description": "Un whisky de Speyside, suave y afrutado con notas de cítricos y vainilla.",
         "region": "Speyside",
         "availability": true,
-        "stock": "10"
+        "stock": 10
     },
     {
         "id": 14,
         "brand": "Macallan",
         "name": "Rare Cask",
         "age": "Sin declaración de edad",
-        "price": "$350",
+        "price": "usd 350",
         "image": "/image/Macallan14.jpeg",
         "description": "Un whisky de Speyside, exquisito y de edición limitada con sabores complejos.",
         "region": "Speyside",
         "availability": true,
-        "stock": "10"
+        "stock": 10
     },
     {
         "id": 15,
         "brand": "Johnnie Walker",
         "name": "Blue Label",
         "age": "Sin declaración de edad",
-        "price": "$200",
+        "price": "usd 200",
         "image": "/image/JohnnieWalker15.jpeg",
         "description": "Un whisky escocés lujoso y mezclado con maltas raras y envejecidas.",
         "region": "Blend",
         "availability": true,
-        "stock": "20"        
+        "stock": 20
     }
 ]

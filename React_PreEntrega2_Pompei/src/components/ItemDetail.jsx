@@ -5,9 +5,9 @@ import ItemCount from "./ItemCount";
 const ItemDetail = ( {products} ) => {
 
   return (
-    <Card className="my-3">
-      <Row noGutters>        
-        <Col md={4}>
+    <Card className="my-3 bg-light">
+      <Row>        
+        <Col md={4} className="d-flex align-items-center justify-content-center">
           <Image src={products.image} fluid />
         </Col>        
         <Col md={8}>
@@ -16,9 +16,9 @@ const ItemDetail = ( {products} ) => {
             <Card.Subtitle className="mb-2 text-muted">{products.name} </Card.Subtitle>
             <Card.Text>{products.description} </Card.Text>
             <Card.Text>Stock: {products.stock} </Card.Text>
-            <Card.Text>Precio: u$d{products.price} </Card.Text>            
+            <Card.Text>Precio: {products.price} </Card.Text>            
             <div>
-                <ItemCount prodcutsStock={parseInt(products.stock)}/>
+                <ItemCount productsStock ={products.stock}/>
             </div>
           </Card.Body>
         </Col>

@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
         const response = await new Promise ((resolve)=>{
           setTimeout(() => {
             resolve (productsJSON.find(products=> products.id === parseInt(id)))
-          }, 2000);
+          }, 1000);
         });        
         setProducts(response)        
       } catch (error) {
@@ -25,10 +25,8 @@ const ItemDetailContainer = () => {
   }, [id])
 
   return (
-    <div>
-      <h2>
-        <ItemDetail products={products} />
-      </h2>
+    <div>      
+        <ItemDetail products={products} />      
     </div>
   )
 }
