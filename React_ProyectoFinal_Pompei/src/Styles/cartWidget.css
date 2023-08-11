@@ -1,8 +1,9 @@
-.icono-carrito{
-    width: 40px;  
-    height: 40px;
-    color: white;
-  }
+.icono {
+  width: 40px;
+  height: 40px;
+  color: white;
+
   span {
     color: red;
   }
+}

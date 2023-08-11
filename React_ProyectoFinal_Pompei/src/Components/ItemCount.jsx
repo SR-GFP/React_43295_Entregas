@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from "react";
 import { Container, Row, Col, Button,  ButtonGroup  } from 'react-bootstrap';
-import "../stylesSheets/itemcount.css"
 
 const ItemCount = ( {productsStock} ) => {
   const [counter, setCounter] = useState(1);
