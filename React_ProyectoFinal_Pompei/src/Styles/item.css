@@ -1,3 +1,11 @@
-#lin-card{
+#link-card{
     text-decoration: none;
+    .card-title{
+        color: rgb(49, 12, 231);
+        font-size: 30px;
+    }
+    .card-subtitle{
+        font-style: italic;
+        font-size: 20px;
+    }
 }

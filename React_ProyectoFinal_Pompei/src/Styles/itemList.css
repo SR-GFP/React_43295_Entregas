@@ -1,10 +1,10 @@
 .card-image {
-  width: 250px; 
+  width: 250px;
   height: 250px;
-  object-fit: cover ; 
+  object-fit: cover;
 }
 
-.card-css                 {
+.card-css {
   color: rgb(196, 185, 185);
   flex: 1 1 auto;
   padding: 1rem;
