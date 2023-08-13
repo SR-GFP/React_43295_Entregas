@@ -12,8 +12,7 @@ export const CartProvider = ({ children }) => {
 
   useEffect(() => {
     if (initialized.current) {
-      localStorage.setItem("cart", JSON.stringify(cart));
-      console.log("se ejecuta esto");
+      localStorage.setItem("cart", JSON.stringify(cart));      
     } else {
       initialized.current = true;
     }

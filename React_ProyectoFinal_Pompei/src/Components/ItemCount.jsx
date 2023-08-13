@@ -1,21 +1,18 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button, ButtonGroup } from "react-bootstrap";
 
-const ItemCount = ({ stock, initial, onAdd }) => {
-  const [counter, setCounter] = useState(initial);
-  const [currentStock, setCurrentStock] = useState(stock);
+const ItemCount = ({ productsStock, initial, onAdd }) => {
+  const [counter, setCounter] = useState(initial);  
 
-  const increaseStock = () => {
-    if (counter < currentStock) {
-      setCounter(counter + 1);
-      setCurrentStock(currentStock - 1);
+  const increment = () => {
+    if (counter < productsStock) {
+      setCounter(counter + 1);      
     }
   };
 
-  const decreaseStock = () => {
-    if (counter > 1) {
-      setCounter(counter - 1);
-      setCurrentStock(currentStock + 1);
+  const decrement = () => {
+    if (counter > initial) {
+      setCounter(counter - 1);      
     }
   };
 
@@ -24,11 +21,11 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       <Row className="mb-3 ">
         <Col md={2}>
           <ButtonGroup aria-label="Basic outlined example">
-            <Button variant="outline-primary" onClick={decreaseStock}>
+            <Button variant="outline-primary" onClick={()=> decrement()}>
               -
             </Button>
             <Button variant="outline-primary">{counter}</Button>
-            <Button variant="outline-primary" onClick={increaseStock}>
+            <Button variant="outline-primary" onClick={()=> increment()}>
               +
             </Button>
           </ButtonGroup>

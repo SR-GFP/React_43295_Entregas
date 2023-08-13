@@ -9,7 +9,7 @@ const ItemDetail = ({ products }) => {
   const handleAddProduct = (counter) => {
     const { id, price, title, image } = products;
     const productToAdd = { id, price, title, image, counter };
-    addItem({ productToAdd, counter });
+    addItem( productToAdd, counter );
   };
 
   return (
